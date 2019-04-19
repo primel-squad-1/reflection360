@@ -1,0 +1,67 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="registration.css" />
+
+<body>
+  <center>
+    <h1 style="color:white;">CANDIDATE REGISTRATION</h1>
+  </center>
+  <div class="container_full">
+    <form action="/action_page.php">
+      <div class="container">
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="email"><b>Email address</b></label>
+        <input type="email" placeholder="Enter RegistrationID" name="email" required>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <label for="name"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="First Name" required>
+
+        <label for="name"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="Last Name" required>
+
+        <label for="Telephone"><b>Telephone</b></label>
+        <input type="tel" placeholder="Enter Telephone" name="Telephone" pattern="[0-9]{10}" required>
+
+        <label for="Mobile"><b>Mobile</b></label>
+        <input type="tel" placeholder="Enter Mobile" name="Mobile" pattern="[0-9]{10}" required>
+
+        <label for="EmploymentStatus"><b>Employment Status</b></label>
+        <div class="input-group">
+          <select style="width:175px;" name="value">
+            <option value="Currently Employed">Currently Employed</option>
+            <option value="Returning to Work">Returning to Work</option>
+            <option value="Redundancy Prospect">Redundancy Prospect</option>
+            <option value="Looking for a change">Looking for a change</option>
+          </select>
+        </div>
+
+        <label for="RoleType"><b>Role Type</b></label>
+        <div class="input-group">
+          <select style="width:175px;" name="value1">
+            <option value1="Full time">Full time</option>
+            <option value1="Part time">Part time</option>
+            <option value1="Job Share">Job Share</option>
+          </select>
+        </div>
+
+        <label for="Profile"><b>Profile</b></label>
+        <textarea type="Text" placeholder="Remarks" rows=15 cols="100" class="form-textarea" name="profile"
+          required></textarea>
+
+        <label for="CV upload"><b>CV upload</b></label>
+        <input type="file" placeholder="Upload your CV" name="CV upload" accept=".doc,.docx,.pdf">
+
+        <hr>
+
+        <button type="submit" name="Submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
